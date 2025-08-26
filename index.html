@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharon Zhang - Interdisciplinary Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #667eea;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: slideUp 1s ease 0.5s forwards;
+        }
+
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: slideUp 1s ease 0.7s forwards;
+            font-weight: 300;
+        }
+
+        .hero .description {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            opacity: 0;
+            animation: slideUp 1s ease 0.9s forwards;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.7;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: slideUp 1s ease 1.1s forwards;
+            backdrop-filter: blur(10px);
+            margin: 0 10px;
+        }
+
+        .cta-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Floating Elements */
+        .floating-element {
+            position: absolute;
+            opacity: 0.15;
+            animation: float 6s ease-in-out infinite;
+            font-size: 3rem;
+        }
+
+        .floating-element:nth-child(1) {
+            top: 15%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            top: 25%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .floating-element:nth-child(3) {
+            top: 70%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        .floating-element:nth-child(4) {
+            top: 60%;
+            right: 10%;
+            animation-delay: 1s;
+        }
+
+        .floating-element:nth-child(5) {
+            top: 40%;
+            left: 5%;
+            animation-delay: 3s;
+        }
+
+        /* Sections */
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-white {
+            background: white;
+        }
+
+        .section-gray {
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #333;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .disciplines-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .discipline-card {
+            background: white;
+            padding: 35px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+            border-top: 4px solid #667eea;
+        }
+
+        .discipline-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .discipline-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .discipline-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .discipline-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Personal Life Section */
+        .personal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .personal-category {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .personal-category:hover {
+            transform: translateY(-5px);
+        }
+
+        .personal-category h3 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .personal-category ul {
+            list-style: none;
+        }
+
+        .personal-category li {
+            margin-bottom: 12px;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .personal-category li::before {
+            content: '•';
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* 3D Printing Showcase */
+        .printing-showcase {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 2px solid #f0f2ff;
+        }
+
+        .printing-showcase h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .showcase-scroll {
+            display: flex;
+            gap: 15px;
+            overflow-x: hidden;
+            padding: 10px 0;
+            scroll-behavior: smooth;
+            transition: transform 0.3s ease;
+        }
+
+        .showcase-item {
+            flex: 0 0 80px;
+            text-align: center;
+        }
+
+        .showcase-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .showcase-image:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .showcase-icon {
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 2px;
+        }
+
+        .showcase-image p {
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 500;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .showcase-label {
+            font-size: 0.75rem;
+            color: #666;
+            text-align: center;
+        }
+
+        .showcase-controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .scroll-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .scroll-btn:hover {
+            background: #5a67d8;
+            transform: scale(1.1);
+        }
+
+        .scroll-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Current Projects */
+        .current-projects {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin: 60px 0;
+            text-align: center;
+        }
+
+        .current-projects h3 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .project-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .project-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .project-item h4 {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .project-item p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Fun Facts */
+        .fun-facts {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+
+        .fun-facts h3 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .fact-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .fact-emoji {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .fact-text {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 25px;
+            background: white;
+            border-radius: 50px;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .contact-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            color: #667eea;
+        }
+
+        /* Animations */
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            33% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+            66% {
+                transform: translateY(10px) rotate(-3deg);
+            }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .disciplines-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .personal-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .current-projects {
+                padding: 30px 20px;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .showcase-scroll {
+                gap: 10px;
+            }
+
+            .showcase-item {
+                flex: 0 0 70px;
+            }
+
+            .showcase-image {
+                width: 70px;
+                height: 70px;
+            }
+
+            .showcase-icon {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Sharon Zhang</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#disciplines">Disciplines</a></li>
+                <li><a href="#personal">Personal Life</a></li>
+                <li><a href="#contact">Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="floating-element">⚙️</div>
+        <div class="floating-element">🤖</div>
+        <div class="floating-element">🏀</div>
+        <div class="floating-element">🎷</div>
+        <div class="floating-element">🖨️</div>
+        
+        <div class="hero-content">
+            <h1>Sharon Zhang</h1>
+            <p class="subtitle">Interdisciplinary Engineer • Medical Robotics • Full-Stack Developer</p>
+            <p class="description">
+                A curious engineer who bridges mechanical systems, medical robotics, and software development. 
+                When I'm not building healthcare technology, you'll find me shooting hoops, playing saxophone, 
+                or 3D printing something cool in my workshop.
+            </p>
+            <a href="#about" class="cta-button">Get to Know Me</a>
+            <a href="#disciplines" class="cta-button">Explore My Journey</a>
+        </div>
+    </section>
+
+    <section id="about" class="section-white">
+        <div class="container">
+            <h2 class="section-title">Who Am I?</h2>
+            <div class="about-intro">
+                <p>
+                    I'm someone who's genuinely fascinated by how things work - from the mechanical systems that power medical robots 
+                    to the software that helps doctors save lives. My journey has taken me from studying mechanical systems 
+                    to programming treatment planning systems, with plenty of adventures in between.
+                </p>
+            </div>
+
+            <div class="current-projects">
+                <h3>What I'm Up to These Days 🚀</h3>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <h4>🏥 Healthcare Innovation</h4>
+                        <p>Building next-gen medical software at Carina Medical that's actually being used in hospitals to help cancer patients</p>
+                    </div>
+                    <div class="project-item">
+                        <h4>🧠 AI/ML Studies</h4>
+                        <p>Deep-diving into machine learning to bring more intelligence to healthcare technology</p>
+                    </div>
+                    <div class="project-item">
+                        <h4>🖨️ 3D Printing Adventures</h4>
+                        <p>Recently got a 3D printer and loving the combination of digital design and physical creation</p>
+                    </div>
+                    <div class="project-item">
+                        <h4>🏀 Team Building</h4>
+                        <p>Co-founded the JHU Asian Women's Basketball Team - grew from 8 to 30+ members!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="disciplines" class="section-gray">
+        <div class="container">
+            <h2 class="section-title">My Interdisciplinary Journey</h2>
+            <div class="disciplines-grid">
+                <div class="discipline-card">
+                    <span class="discipline-icon">⚙️</span>
+                    <h3>Mechanical Engineering</h3>
+                    <p>Tianjin University foundation in mechanical systems, problem-solving mindset, and systems thinking that guides how I approach software architecture today.</p>
+                </div>
+                <div class="discipline-card">
+                    <span class="discipline-icon">🤖</span>
+                    <h3>Medical Robotics</h3>
+                    <p>Johns Hopkins MSE opened my eyes to the incredible potential of robotics in healthcare. Built real-time control interfaces for medical devices and fell in love with technology that directly improves human lives.</p>
+                </div>
+                <div class="discipline-card">
+                    <span class="discipline-icon">💻</span>
+                    <h3>Software Engineering</h3>
+                    <p>Discovered that software is where I can make the biggest impact in healthcare. From Django backends to Angular frontends, I love building systems that scale and solve real problems.</p>
+                </div>
+                <div class="discipline-card">
+                    <span class="discipline-icon">🏥</span>
+                    <h3>Healthcare Technology</h3>
+                    <p>Three years at Carina Medical taught me that healthcare tech isn't just about coding - it's about understanding workflows, regulations, and most importantly, the people who use our systems.</p>
+                </div>
+                <div class="discipline-card">
+                    <span class="discipline-icon">🧠</span>
+                    <h3>AI/ML (Learning)</h3>
+                    <p>Currently expanding into artificial intelligence and machine learning. Excited about the potential to bring predictive analytics and intelligent automation to healthcare challenges.</p>
+                </div>
+                <div class="discipline-card">
+                    <span class="discipline-icon">🖨️</span>
+                    <h3>Digital Fabrication</h3>
+                    <p>My latest passion - bridging the digital and physical worlds through 3D printing. Love the idea of designing something on screen and holding it in my hands hours later.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="personal" class="section-white">
+        <div class="container">
+            <h2 class="section-title">Beyond the Code</h2>
+            <div class="personal-grid">
+                <div class="personal-category">
+                    <h3>🏀 Athletic Life</h3>
+                    <ul>
+                        <li>Co-founded JHU Asian Women's Basketball Team</li>
+                        <li>Passionate about basketball since childhood</li>
+                        <li>Flag football enthusiast</li>
+                        <li>Ultimate frisbee player</li>
+                        <li>Love the team dynamics and strategy</li>
+                    </ul>
+                </div>
+                <div class="personal-category">
+                    <h3>🎵 Creative Pursuits</h3>
+                    <ul>
+                        <li>Playing saxophone - my way to unwind</li>
+                        <li>3D printing and digital design</li>
+                        <li>Love jazz and improvisation</li>
+                        <li>Music theory and composition</li>
+                        <li>Finding harmony in both code and music</li>
+                    </ul>
+                </div>
+                <div class="personal-category">
+                    <h3>🎲 Games & Strategy</h3>
+                    <ul>
+                        <li>Poker - love the psychology and math</li>
+                        <li>Billiards for precision and focus</li>
+                        <li>Strategic thinking in everything I do</li>
+                        <li>Board games with friends</li>
+                        <li>Problem-solving is my favorite game</li>
+                    </ul>
+                </div>
+                <div class="personal-category">
+                    <h3>🖨️ 3D Printing & Making</h3>
+                    <ul>
+                        <li>Recently got into 3D printing and loving it</li>
+                        <li>Custom phone stands for coworkers</li>
+                        <li>Mechanical gadgets and prototypes</li>
+                        <li>Bridging digital design with physical creation</li>
+                        <li>Always experimenting with new designs</li>
+                    </ul>
+                    
+                    <div class="printing-showcase">
+                        <h4>🎨 Latest Creations</h4>
+                        <div class="showcase-scroll">
+                            <div class="showcase-item">
+                                <div class="showcase-image">
+                                    <span class="showcase-icon">📱</span>
+                                    <p>Phone Stand</p>
+                                </div>
+                                <span class="showcase-label">Custom Stands</span>
+                            </div>
+                            <div class="showcase-item">
+                                <div class="showcase-image">
+                                    <span class="showcase-icon">⚙️</span>
+                                    <p>Gear System</p>
+                                </div>
+                                <span class="showcase-label">Mechanical</span>
+                            </div>
+                            <div class="showcase-item">
+                                <div class="showcase-image">
+                                    <span class="showcase-icon">🏥</span>
+                                    <p>Medical Tool</p>
+                                </div>
+                                <span class="showcase-label">Healthcare</span>
+                            </div>
+                            <div class="showcase-item">
+                                <div class="showcase-image">
+                                    <span class="showcase-icon">🎨</span>
+                                    <p>Art Piece</p>
+                                </div>
+                                <span class="showcase-label">Creative</span>
+                            </div>
+                            <div class="showcase-item">
+                                <div class="showcase-image">
+                                    <span class="showcase-icon">🏠</span>
+                                    <p>Organizer</p>
+                                </div>
+                                <span class="showcase-label">Home Solutions</span>
+                            </div>
+                            <div class="showcase-item">
+                                <div class="showcase-image">
+                                    <span class="showcase-icon">🔬</span>
+                                    <p>Prototype</p>
+                                </div>
+                                <span class="showcase-label">R&D</span>
+                            </div>
+                        </div>
+                        <div class="showcase-controls">
+                            <button class="scroll-btn" onclick="scrollShowcase(-1)">‹</button>
+                            <button class="scroll-btn" onclick="scrollShowcase(1)">›</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fun-facts">
+                <h3>Fun Facts About Me</h3>
+                <div class="facts-grid">
+                    <div class="fact-item">
+                        <span class="fact-emoji">📈</span>
+                        <p class="fact-text">Grew basketball team membership by 275% in 2 years</p>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-emoji">🎓</span>
+                        <p class="fact-text">Johns Hopkins graduate who believes in both excellence and fun</p>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-emoji">🔧</span>
+                        <p class="fact-text">Can debug code and fix mechanical things with equal enthusiasm</p>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-emoji">🎷</span>
+                        <p class="fact-text">Saxophone helps me think through complex engineering problems</p>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-emoji">🖨️</span>
+                        <p class="fact-text">Latest 3D print: custom phone stands for my coworkers</p>
+                    </div>
+                    <div class="fact-item">
+                        <span class="fact-emoji">🌟</span>
+                        <p class="fact-text">Volunteer of the Year 2018, Outstanding Athlete Award 2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-gray">
+        <div class="container">
+            <h2 class="section-title">Let's Connect!</h2>
+            <div class="contact-content">
+                <p>
+                    Whether you want to talk about healthcare technology, debate the future of medical AI, 
+                    jam on saxophone, shoot some hoops, or just chat about the intersection of engineering 
+                    and life - I'd love to hear from you!
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:szhan149@alumni.jh.edu" class="contact-link">
+                        <span>📧</span>
+                        <span>Email Me</span>
+                    </a>
+                    <a href="tel:+16673041578" class="contact-link">
+                        <span>📱</span>
+                        <span>Call/Text</span>
+                    </a>
+                    <a href="https://linkedin.com/in/sharon-zhang" class="contact-link">
+                        <span>💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/sharonzhang" class="contact-link">
+                        <span>💻</span>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <div style="margin-top: 40px; padding: 20px; background: rgba(102, 126, 234, 0.1); border-radius: 10px;">
+                    <p style="font-size: 0.95rem; color: #667eea; font-weight: 500;">
+                        📍 Reston, VA • Always up for coffee chats about technology and life
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.discipline-card, .personal-category, .project-item, .fact-item').forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(30px)';
+            item.style.transition = 'all 0.6s ease';
+            observer.observe(item);
+        });
+
+        // Add stagger delays
+        document.querySelectorAll('.discipline-card').forEach((item, index) => {
+            item.style.transitionDelay = `${index * 0.1}s`;
+        });
+
+        document.querySelectorAll('.personal-category').forEach((item, index) => {
+            item.style.transitionDelay = `${index * 0.15}s`;
+        });
+
+        // 3D Printing Showcase Scroll Functionality
+        let currentShowcaseIndex = 0;
+        
+        window.scrollShowcase = function(direction) {
+            const showcaseScroll = document.querySelector('.showcase-scroll');
+            const items = document.querySelectorAll('.showcase-item');
+            const itemWidth = 95; // 80px width + 15px gap
+            const visibleItems = 3;
+            const maxIndex = Math.max(0, items.length - visibleItems);
+            
+            currentShowcaseIndex = Math.max(0, Math.min(maxIndex, currentShowcaseIndex + direction));
+            const translateX = -currentShowcaseIndex * itemWidth;
+            
+            showcaseScroll.style.transform = `translateX(${translateX}px)`;
+        };
+
+        // Auto-scroll showcase every 3 seconds
+        setInterval(() => {
+            const items = document.querySelectorAll('.showcase-item');
+            const maxIndex = Math.max(0, items.length - 3);
+            
+            if (currentShowcaseIndex >= maxIndex) {
+                currentShowcaseIndex = -1;
+            }
+            scrollShowcase(1);
+        }, 3000);
+
+        // Enhanced floating elementss`;
+       
+
+        document.querySelectorAll('.gallery-item').forEach((item, index) => {
+            item.style.transitionDelay = `${index * 0.1}s`;
+        });
+
+        document.querySelectorAll('.philosophy-item').forEach((item, index) => {
+            item.style.transitionDelay = `${index * 0.2}s`;
+        });
+
+        // Enhanced floating elements
+        document.querySelectorAll('.floating-element').forEach(element => {
+            element.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.5) rotate(15deg)';
+                this.style.opacity = '0.4';
+            });
+            
+            element.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1) rotate(0deg)';
+                this.style.opacity = '0.15';
+            });
+        });
+
+        // Dynamic subtitle cycling
+        const subtitle = document.querySelector('.hero .subtitle');
+        const subtitles = [
+            'Interdisciplinary Engineer • Medical Robotics • Full-Stack Developer',
+            'Basketball Player • Saxophone Enthusiast • 3D Printing Explorer',
+            'Healthcare Tech Innovator • Team Leader • Problem Solver',
+            'Johns Hopkins Graduate • Mechanical Engineer • Creative Thinker'
+        ];
+        
+        let currentSubtitle = 0;
+        setInterval(() => {
+            currentSubtitle = (currentSubtitle + 1) % subtitles.length;
+            subtitle.style.opacity = '0';
+            setTimeout(() => {
+                subtitle.textContent = subtitles[currentSubtitle];
+                subtitle.style.opacity = '1';
+            }, 500);
+        }, 4000);
+
+        // Add interactive hover effects to project items
+        document.querySelectorAll('.project-item').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px) scale(1.02)';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
