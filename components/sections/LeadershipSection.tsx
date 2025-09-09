@@ -129,7 +129,7 @@ export function LeadershipSection() {
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold">
               <span className="bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-                JHU Asian Women's Basketball Team
+                JHU Asian Women&apos;s Basketball Team
               </span>
             </h2>
           </div>

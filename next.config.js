@@ -75,7 +75,7 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
   
-  // Optimized for Netlify deployment
+  // Netlify deployment configuration
   trailingSlash: false,
   
   // Bundle analyzer (development only)

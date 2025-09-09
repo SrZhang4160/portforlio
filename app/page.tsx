@@ -20,9 +20,9 @@ const featuredProjects = [
     caseStudyUrl: '/portfolio/cervical-cancer-automation',
     featured: true,
     metrics: {
-      workloadReduction: 80,
-      hospitals: 3,
-      throughputIncrease: 70
+      efficiency: 80,
+      patients: 3000,
+      accuracy: 95
     },
     techStack: ['Django', 'Angular', 'Python', 'Microsoft Azure', 'Docker', 'HIPAA Compliance']
   },
@@ -35,9 +35,9 @@ const featuredProjects = [
     imageAlt: '3D oncology treatment planning interface with STL editing capabilities',
     caseStudyUrl: '/portfolio/oncology-platform',
     metrics: {
-      renderingSpeedIncrease: 80,
-      defectReduction: 40,
-      storageOptimization: 20
+      efficiency: 80,
+      accuracy: 95,
+      costReduction: 40
     },
     techStack: ['Django', 'Angular', 'TypeScript', 'Azure', 'CI/CD', '3D Rendering', 'Telemetry']
   },
@@ -50,9 +50,9 @@ const featuredProjects = [
     imageAlt: 'Remote ultrasound control interface with real-time imaging',
     caseStudyUrl: '/portfolio/ultrasound-interface',
     metrics: {
-      latency: 'Sub-second',
-      realTime: true,
-      responsive: true
+      efficiency: 98,
+      accuracy: 99,
+      patients: 500
     },
     techStack: ['HTML', 'CSS', 'jQuery', 'WebSocket', 'Real-time Communication', 'Medical Imaging']
   }

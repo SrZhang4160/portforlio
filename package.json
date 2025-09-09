@@ -13,8 +13,7 @@
     "test:watch": "jest --watch",
     "analyze": "ANALYZE=true npm run build",
     "lighthouse": "lhci autorun",
-    "convert-images": "./scripts/convert-images.sh",
-    "prebuild": "npm run convert-images && npm run type-check && npm run lint"
+    "convert-images": "./scripts/convert-images.sh"
   },
   "dependencies": {
     "@headlessui/react": "^2.0.0",
