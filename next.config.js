@@ -75,8 +75,10 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
   
-  // Netlify deployment configuration
-  trailingSlash: false,
+  // Static export for Netlify deployment
+  output: 'export',
+  trailingSlash: true,
+  basePath: '',
   
   // Bundle analyzer (development only)
   webpack: (config, { dev, isServer }) => {
