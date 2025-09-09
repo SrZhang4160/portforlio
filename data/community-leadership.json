@@ -1,0 +1,217 @@
+{
+  "leadership_overview": {
+    "primary_role": "Organizer & Fundraising Team Lead",
+    "organization": "She Got Buckets - Women's Basketball Non-Profit",
+    "tenure": "2022-present",
+    "team_size": "25+ volunteer organizers",
+    "participants_served": "300+ women athletes annually",
+    "total_fundraised": "$85000",
+    "events_organized": 12,
+    "leadership_philosophy": "Building inclusive communities through sports, technology, and mentorship"
+  },
+  "quantified_impact": {
+    "fundraising_achievements": {
+      "2024_goal": "$50000",
+      "2024_actual": "$62000",
+      "success_rate": "124%",
+      "donor_retention": "78%",
+      "corporate_sponsors": 15,
+      "individual_donors": 180,
+      "avg_donation": "$340"
+    },
+    "team_building_metrics": {
+      "volunteer_retention": "85%",
+      "new_volunteer_recruitment": "40+ annually",
+      "leadership_development": "8 volunteers promoted to team leads",
+      "cross_functional_collaboration": "Coordinated with 5 partner organizations"
+    },
+    "community_growth": {
+      "participant_growth": "40% year-over-year",
+      "geographic_expansion": "3 new cities (DC, Baltimore, Richmond)",
+      "program_diversity": "Added youth mentorship, tech career workshops",
+      "media_coverage": "Featured in 6 local news outlets"
+    }
+  },
+  "transferable_skills": {
+    "project_management": {
+      "skill": "Large-scale event coordination",
+      "healthcare_application": "Clinical trial management, multi-site medical device deployment",
+      "examples": [
+        "Coordinated 12-team tournament with 200+ participants",
+        "Managed $62K budget with 15 corporate sponsors",
+        "Led cross-functional team of 25+ volunteers"
+      ]
+    },
+    "stakeholder_management": {
+      "skill": "Multi-stakeholder relationship building",
+      "healthcare_application": "Clinical partnerships, regulatory relationships, patient advocacy",
+      "examples": [
+        "Built partnerships with 15 corporate sponsors",
+        "Maintained relationships with 180+ individual donors",
+        "Negotiated facility agreements across 3 cities"
+      ]
+    },
+    "data_driven_decision_making": {
+      "skill": "Performance analytics and optimization",
+      "healthcare_application": "Clinical outcomes analysis, patient engagement metrics",
+      "examples": [
+        "Tracked donation conversion rates (78% retention)",
+        "Analyzed participant growth patterns (40% YoY)",
+        "Optimized fundraising strategies based on donor data"
+      ]
+    },
+    "inclusive_leadership": {
+      "skill": "Diversity, equity, inclusion in team building",
+      "healthcare_application": "Inclusive AI development, diverse clinical trials, equitable healthcare access",
+      "examples": [
+        "Built 85% volunteer retention through inclusive practices",
+        "Expanded programs to underserved communities",
+        "Mentored 8 women into leadership positions"
+      ]
+    },
+    "crisis_management": {
+      "skill": "Problem-solving under pressure",
+      "healthcare_application": "Medical device troubleshooting, clinical emergency response",
+      "examples": [
+        "Pivoted to virtual fundraising during COVID-19",
+        "Maintained team morale during budget shortfalls",
+        "Resolved facility conflicts 24 hours before major event"
+      ]
+    }
+  },
+  "professional_development_through_community": {
+    "networking_outcomes": [
+      "Connected with Microsoft Health PM through basketball community",
+      "Met 3 healthcare startup founders at She Got Buckets events",
+      "Established mentorship relationship with former Google Health engineer",
+      "Built relationship with NIH researcher who plays in our league"
+    ],
+    "skill_development": [
+      "Public speaking: Presented at 5 fundraising events to 100+ audiences",
+      "Financial management: Oversaw $85K in organizational funds",
+      "Marketing strategy: Grew social media following by 300%",
+      "Partnership development: Secured 15 corporate sponsorships"
+    ],
+    "leadership_growth": [
+      "Team building: Recruited and retained 25+ volunteers",
+      "Conflict resolution: Mediated team disputes and facility issues",
+      "Strategic planning: Developed 3-year organizational growth plan",
+      "Cultural development: Created inclusive team values and practices"
+    ]
+  },
+  "basketball_team_organization": {
+    "team_name": "Virginia Healthcare Professionals",
+    "team_size": "12 active players",
+    "league": "DMV Women's Basketball League",
+    "season_record": "15-3 (2024 season)",
+    "achievements": [
+      "League semifinals 2024",
+      "Most Improved Team award",
+      "Highest team attendance rate (95%)",
+      "Organized 4 community service events"
+    ],
+    "leadership_responsibilities": [
+      "Practice scheduling and facility coordination",
+      "Team budget management ($3,500 annual)",
+      "Player recruitment and team chemistry building",
+      "Game strategy development and coaching support"
+    ],
+    "professional_connections": [
+      "Team includes 2 nurses, 1 medical researcher, 3 healthcare administrators",
+      "Built relationships with healthcare professionals across DMV area",
+      "Organized career networking events through basketball connections",
+      "Created informal mentorship network within team"
+    ]
+  },
+  "big_tech_culture_fit": {
+    "collaboration_evidence": [
+      "Cross-functional team leadership (volunteers from tech, healthcare, business)",
+      "Remote team coordination during COVID-19 pivot",
+      "Data-driven decision making in all organizational strategies",
+      "Inclusive hiring practices for volunteer positions"
+    ],
+    "innovation_mindset": [
+      "Pioneered virtual fundraising model during pandemic",
+      "Created tech-enabled volunteer management system",
+      "Developed social media strategy that 3x engagement",
+      "Built partnership model that other non-profits now replicate"
+    ],
+    "growth_mentality": [
+      "Consistently exceeded fundraising goals by 20%+",
+      "Expanded organization to 3 new cities",
+      "Developed 8 volunteers into leadership roles",
+      "Continuously iterate on programs based on participant feedback"
+    ],
+    "community_building": [
+      "Created sense of belonging for 300+ women athletes",
+      "Built lasting friendships and professional networks",
+      "Established mentorship programs connecting senior and junior players",
+      "Fostered inclusive environment where all skill levels thrive"
+    ]
+  },
+  "visual_assets": {
+    "team_photos": [
+      "/images/community/she-got-buckets-team.jpg",
+      "/images/community/tournament-championship.jpg",
+      "/images/community/fundraising-event.jpg"
+    ],
+    "action_shots": [
+      "/images/community/basketball-game-1.jpg",
+      "/images/community/basketball-game-2.jpg",
+      "/images/community/community-service.jpg"
+    ],
+    "leadership_moments": [
+      "/images/community/speaking-at-fundraiser.jpg",
+      "/images/community/team-planning-meeting.jpg",
+      "/images/community/sponsor-appreciation-event.jpg"
+    ],
+    "achievement_photos": [
+      "/images/community/league-semifinals.jpg",
+      "/images/community/team-improvement-award.jpg",
+      "/images/community/volunteer-appreciation.jpg"
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Maria Rodriguez",
+      "role": "Microsoft Health Product Manager",
+      "connection": "Met through She Got Buckets networking event",
+      "quote": "Sharon's leadership in the basketball community showed me her ability to build inclusive teams and drive results. Her combination of technical skills and people leadership is exactly what we look for at Microsoft Health.",
+      "photo": "/images/testimonials/maria-rodriguez.jpg"
+    },
+    {
+      "name": "Dr. Jennifer Chen",
+      "role": "NIH Medical Researcher",
+      "connection": "Basketball teammate",
+      "quote": "Playing with Sharon for two years, I've seen her solve complex problems under pressure and bring out the best in everyone on the team. These same skills translate directly to her healthcare AI work.",
+      "photo": "/images/testimonials/jennifer-chen.jpg"
+    },
+    {
+      "name": "Lisa Thompson",
+      "role": "She Got Buckets Co-Founder",
+      "connection": "Direct collaboration",
+      "quote": "Sharon transformed our fundraising from grassroots efforts to a sophisticated, data-driven operation. She raised more money in one year than we had in the previous three combined.",
+      "photo": "/images/testimonials/lisa-thompson.jpg"
+    }
+  ],
+  "integration_with_technical_work": {
+    "healthcare_connections": [
+      "Team basketball connections led to clinical insights for glaucoma AI project",
+      "Healthcare professional teammates provided user feedback on medical device UX",
+      "Community events created opportunities to discuss healthcare accessibility challenges",
+      "Basketball injury experiences informed ergonomic design considerations"
+    ],
+    "leadership_applications": [
+      "Applied team-building skills to cross-functional medical device development team",
+      "Used conflict resolution experience to mediate technical disagreements",
+      "Transferred data-driven approach from fundraising to AI model optimization",
+      "Applied inclusive leadership principles to diverse clinical trial participant recruitment"
+    ],
+    "network_leveraging": [
+      "Healthcare professional connections provided domain expertise validation",
+      "Community relationships opened doors to clinical partnership opportunities",
+      "Basketball network includes potential early adopters for medical devices",
+      "Leadership reputation in community enhanced professional credibility"
+    ]
+  }
+}

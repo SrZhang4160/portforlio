@@ -1,0 +1,175 @@
+{
+  "visited": [
+    {
+      "state": "CA",
+      "coordinates": [-119.4179, 36.7783],
+      "key_moments": [
+        {
+          "city": "San Francisco",
+          "event": "Google Health Developer Conference 2024",
+          "date": "March 2024",
+          "type": "Professional Networking",
+          "impact": "Connected with 3 Google Health hiring managers",
+          "key_insight": "Google's focus on consumer health devices aligns perfectly with at-home tonometer project",
+          "connections": 8,
+          "follow_ups": 3,
+          "career_relevance": 95
+        },
+        {
+          "city": "San Diego", 
+          "event": "HIMSS Healthcare Innovation Summit",
+          "date": "February 2024",
+          "type": "Industry Research",
+          "impact": "Presented student innovation showcase",
+          "key_insight": "Healthcare IT leaders actively seeking FDA-compliant AI medical devices",
+          "connections": 12,
+          "follow_ups": 5,
+          "career_relevance": 88
+        }
+      ],
+      "total_connections": 20,
+      "strategic_value": "High",
+      "next_planned": "Apple Health team connections in Cupertino"
+    },
+    {
+      "state": "WA",
+      "coordinates": [-120.7401, 47.7511],
+      "key_moments": [
+        {
+          "city": "Seattle",
+          "event": "Microsoft Health Innovation Summit",
+          "date": "June 2024",
+          "type": "Technical Learning",
+          "impact": "Learned about AI integration in clinical workflows",
+          "key_insight": "Microsoft's healthcare cloud infrastructure could support our tonometer data pipeline",
+          "connections": 6,
+          "follow_ups": 2,
+          "career_relevance": 92
+        }
+      ],
+      "total_connections": 6,
+      "strategic_value": "High",
+      "next_planned": "Follow-up with Microsoft Health AI team"
+    },
+    {
+      "state": "TX",
+      "coordinates": [-99.9018, 31.9686],
+      "key_moments": [
+        {
+          "city": "Austin",
+          "event": "HIMSS Healthcare IT Conference",
+          "date": "February 2024",
+          "type": "Industry Research",
+          "impact": "Presented at student innovation showcase",
+          "key_insight": "Healthcare IT leaders are actively seeking FDA-compliant AI medical devices",
+          "connections": 15,
+          "follow_ups": 7,
+          "career_relevance": 85
+        }
+      ],
+      "total_connections": 15,
+      "strategic_value": "Medium",
+      "next_planned": "Texas Medical Center partnerships"
+    },
+    {
+      "state": "MA",
+      "coordinates": [-71.0275, 42.2352],
+      "key_moments": [
+        {
+          "city": "Boston",
+          "event": "Harvard Medical AI Symposium",
+          "date": "January 2024",
+          "type": "Academic Research",
+          "impact": "Connected with leading medical AI researchers",
+          "key_insight": "Academic partnerships crucial for clinical validation of AI medical devices",
+          "connections": 9,
+          "follow_ups": 4,
+          "career_relevance": 78
+        }
+      ],
+      "total_connections": 9,
+      "strategic_value": "Medium",
+      "next_planned": "MIT Healthcare Innovation Lab collaboration"
+    },
+    {
+      "state": "MD",
+      "coordinates": [-76.6413, 39.0458],
+      "key_moments": [
+        {
+          "city": "Baltimore",
+          "event": "Johns Hopkins Alumni Healthcare Network",
+          "date": "Ongoing",
+          "type": "Alumni Networking",
+          "impact": "Leveraging university connections for healthcare innovation",
+          "key_insight": "Alumni network provides credibility and mentorship for healthcare startups",
+          "connections": 25,
+          "follow_ups": 12,
+          "career_relevance": 90
+        }
+      ],
+      "total_connections": 25,
+      "strategic_value": "High",
+      "next_planned": "Johns Hopkins Medical Robotics Lab collaboration"
+    },
+    {
+      "state": "NY", 
+      "coordinates": [-74.2591, 40.6892],
+      "key_moments": [
+        {
+          "city": "New York",
+          "event": "Digital Health NYC Meetup",
+          "date": "March 2024",
+          "type": "Community Networking",
+          "impact": "Connected with healthcare startup ecosystem",
+          "key_insight": "NYC has vibrant healthcare innovation community with strong VC presence",
+          "connections": 18,
+          "follow_ups": 6,
+          "career_relevance": 82
+        }
+      ],
+      "total_connections": 18,
+      "strategic_value": "Medium",
+      "next_planned": "Mount Sinai Innovation Partners pitch session"
+    }
+  ],
+  "upcoming_targets": [
+    {
+      "state": "CA",
+      "city": "Cupertino",
+      "target": "Apple Health team connections",
+      "timeline": "Q1 2025",
+      "strategy": "Target Apple Health engineers working on HealthKit and medical device integrations",
+      "priority": "High"
+    },
+    {
+      "state": "CA", 
+      "city": "Palo Alto",
+      "target": "Stanford HAI research collaborations",
+      "timeline": "Q1 2025",
+      "strategy": "Connect with Stanford Human-Centered AI Institute for medical AI research partnerships",
+      "priority": "High"
+    },
+    {
+      "state": "MA",
+      "city": "Cambridge",
+      "target": "Healthcare startup ecosystem in Boston",
+      "timeline": "Q2 2025",
+      "strategy": "Engage with MIT Healthcare Innovation Lab and Boston healthcare accelerators",
+      "priority": "Medium"
+    }
+  ],
+  "network_growth": {
+    "total_healthcare_connections": 101,
+    "big_tech_health_contacts": 17,
+    "medical_device_companies": 8,
+    "research_institutions": 12,
+    "healthcare_vcs": 6,
+    "regulatory_experts": 4
+  },
+  "strategic_insights": [
+    "Big Tech Health divisions prioritize consumer medical devices with FDA pathways",
+    "Clinical validation partnerships with academic medical centers are essential",
+    "Healthcare VCs look for founders with technical depth and regulatory understanding",
+    "Alumni networks provide crucial credibility in healthcare innovation space"
+  ]
+}

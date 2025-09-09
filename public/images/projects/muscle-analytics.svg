@@ -1,0 +1,15 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00D4E6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgGradient3)"/>
+  <rect x="250" y="150" width="300" height="250" rx="20" fill="#ffffff" opacity="0.9"/>
+  <circle cx="400" cy="250" r="40" fill="#10B981" opacity="0.8"/>
+  <circle cx="400" cy="320" r="30" fill="#00D4E6" opacity="0.8"/>
+  <path d="M 350 275 Q 400 250 450 275" stroke="#333333" stroke-width="3" fill="none"/>
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#ffffff" text-anchor="middle">Muscle Analytics</text>
+  <text x="400" y="480" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" opacity="0.9">AI-Powered Performance Analysis</text>
+</svg>

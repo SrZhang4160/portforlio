@@ -1,0 +1,354 @@
+{
+  "prints": [
+    {
+      "slug": "medical-device-housing",
+      "title": "Medical Device Prototype Housing",
+      "images": [
+        {
+          "webp": "/images/prints/full-size/IMG_5595.webp",
+          "jpeg": "/images/prints/full-size/IMG_5595.jpg",
+          "thumbnail": "/images/prints/thumbnails/IMG_5595.webp",
+          "thumbnailJpeg": "/images/prints/thumbnails/IMG_5595.jpg",
+          "placeholder": "/images/prints/thumbnails/IMG_5595-blur.jpg",
+          "alt": "Medical Device Prototype Housing - PETG 3D print showing Prototype housing for at-home tonometer project. R..."
+        },
+        {
+          "webp": "/images/prints/full-size/IMG_5605.webp",
+          "jpeg": "/images/prints/full-size/IMG_5605.jpg",
+          "thumbnail": "/images/prints/thumbnails/IMG_5605.webp",
+          "thumbnailJpeg": "/images/prints/thumbnails/IMG_5605.jpg",
+          "placeholder": "/images/prints/thumbnails/IMG_5605-blur.jpg",
+          "alt": "Medical Device Prototype Housing - PETG 3D print showing Prototype housing for at-home tonometer project. R..."
+        },
+        {
+          "webp": "/images/prints/full-size/17ad199616b89f7a8056edfe5370500d.webp",
+          "jpeg": "/images/prints/full-size/17ad199616b89f7a8056edfe5370500d.jpg",
+          "thumbnail": "/images/prints/thumbnails/17ad199616b89f7a8056edfe5370500d.webp",
+          "thumbnailJpeg": "/images/prints/thumbnails/17ad199616b89f7a8056edfe5370500d.jpg",
+          "placeholder": "/images/prints/thumbnails/17ad199616b89f7a8056edfe5370500d-blur.jpg",
+          "alt": "Medical Device Prototype Housing - PETG 3D print showing Prototype housing for at-home tonometer project. R..."
+        }
+      ],
+      "material": "PETG",
+      "settings": {
+        "nozzle": "0.4mm",
+        "layer_height": "0.2mm",
+        "infill": "25%",
+        "walls": "4",
+        "supports": "tree",
+        "print_speed": "50mm/s"
+      },
+      "tags": [
+        "functional",
+        "medical",
+        "prototype",
+        "biocompatible"
+      ],
+      "category": "medical-devices",
+      "complexity": "advanced",
+      "print_time": "8 hours 45 minutes",
+      "post_processing": "Light sanding, ultrasonic cleaning",
+      "notes": "Prototype housing for at-home tonometer project. Required biocompatible PETG material and precise tolerances for sensor integration. Multiple iterations to achieve proper fit with electronic components.",
+      "learnings": "Discovered importance of print orientation for structural integrity in medical applications. Wall thickness critical for durability.",
+      "applications": "Medical device prototyping, healthcare hardware development"
+    },
+    {
+      "slug": "cable-management-system",
+      "title": "Modular Desk Cable Management",
+      "images": [
+        {
+          "webp": "/images/prints/full-size/IMG_5608.webp",
+          "jpeg": "/images/prints/full-size/IMG_5608.jpg",
+          "thumbnail": "/images/prints/thumbnails/IMG_5608.webp",
+          "thumbnailJpeg": "/images/prints/thumbnails/IMG_5608.jpg",
+          "placeholder": "/images/prints/thumbnails/IMG_5608-blur.jpg",
+          "alt": "Modular Desk Cable Management - PLA 3D print showing Custom cable routing system for development workst..."
+        },
+        {
+          "webp": "/images/prints/full-size/IMG_5711.webp",
+          "jpeg": "/images/prints/full-size/IMG_5711.jpg",
+          "thumbnail": "/images/prints/thumbnails/IMG_5711.webp",
+          "thumbnailJpeg": "/images/prints/thumbnails/IMG_5711.jpg",
+          "placeholder": "/images/prints/thumbnails/IMG_5711-blur.jpg",
+          "alt": "Modular Desk Cable Management - PLA 3D print showing Custom cable routing system for development workst..."
+        }
+      ],
+      "material": "PLA",
+      "settings": {
+        "nozzle": "0.4mm",
+        "layer_height": "0.3mm",
+        "infill": "15%",
+        "walls": "3",
+        "supports": "none"
+      },
+      "tags": [
+        "functional",
+        "desk",
+        "organization",
+        "modular"
+      ],
+      "category": "productivity",
+      "complexity": "intermediate",
+      "print_time": "2 hours 30 minutes",
+      "post_processing": "None required",
+      "notes": "Custom cable routing system for development workstation. Designed with snap-fit connections for easy reconfiguration as setup evolves.",
+      "learnings": "PLA perfect for desk accessories - strong enough but easy to print. Snap-fit tolerances require precise calibration.",
+      "applications": "Workspace organization, rapid prototyping of functional designs"
+    },
+    {
+      "slug": "ergonomic-phone-stand",
+      "title": "Adjustable Ergonomic Phone Stand",
+      "images": [
+        {
+          "webp": "/images/prints/full-size/IMG_5764.webp",
+          "jpeg": "/images/prints/full-size/IMG_5764.jpg",
+          "thumbnail": "/images/prints/thumbnails/IMG_5764.webp",
+          "thumbnailJpeg": "/images/prints/thumbnails/IMG_5764.jpg",
+          "placeholder": "/images/prints/thumbnails/IMG_5764-blur.jpg",
+          "alt": "Adjustable Ergonomic Phone Stand - PLA 3D print showing Designed for video calls and code review sessions...."
+        },
+        {
+          "webp": "/images/prints/full-size/IMG_5766.webp",
+          "jpeg": "/images/prints/full-size/IMG_5766.jpg",
+          "thumbnail": "/images/prints/thumbnails/IMG_5766.webp",
+          "thumbnailJpeg": "/images/prints/thumbnails/IMG_5766.jpg",
+          "placeholder": "/images/prints/thumbnails/IMG_5766-blur.jpg",
+          "alt": "Adjustable Ergonomic Phone Stand - PLA 3D print showing Designed for video calls and code review sessions...."
+        }
+      ],
+      "material": "PLA",
+      "settings": {
+        "nozzle": "0.4mm",
+        "layer_height": "0.2mm",
+        "infill": "20%",
+        "walls": "3",
+        "supports": "minimal"
+      },
+      "tags": [
+        "functional",
+        "ergonomic",
+        "adjustable"
+      ],
+      "category": "productivity",
+      "complexity": "beginner",
+      "print_time": "1 hour 15 minutes",
+      "post_processing": "Light filing of adjustment mechanism",
+      "notes": "Designed for video calls and code review sessions. Multiple angle positions with secure phone grip. Optimized print orientation to minimize supports.",
+      "learnings": "Importance of considering use case during design phase. Angle calculations matter for actual ergonomic benefit.",
+      "applications": "Workspace ergonomics, user experience design thinking"
+    },
+    {
+      "slug": "ai-learning-badge-display",
+      "title": "AI Certification Badge Display",
+      "images": [
+        {
+          "webp": "/images/prints/full-size/IMG_5726.webp",
+          "jpeg": "/images/prints/full-size/IMG_5726.jpg",
+          "thumbnail": "/images/prints/thumbnails/IMG_5726.webp",
+          "thumbnailJpeg": "/images/prints/thumbnails/IMG_5726.jpg",
+          "placeholder": "/images/prints/thumbnails/IMG_5726-blur.jpg",
+          "alt": "AI Certification Badge Display - PETG 3D print showing Physical display for Google Prompt Engineering and..."
+        },
+        {
+          "webp": "/images/prints/full-size/IMG_5742.webp",
+          "jpeg": "/images/prints/full-size/IMG_5742.jpg",
+          "thumbnail": "/images/prints/thumbnails/IMG_5742.webp",
+          "thumbnailJpeg": "/images/prints/thumbnails/IMG_5742.jpg",
+          "placeholder": "/images/prints/thumbnails/IMG_5742-blur.jpg",
+          "alt": "AI Certification Badge Display - PETG 3D print showing Physical display for Google Prompt Engineering and..."
+        }
+      ],
+      "material": "PETG",
+      "settings": {
+        "nozzle": "0.4mm",
+        "layer_height": "0.2mm",
+        "infill": "30%",
+        "walls": "4",
+        "supports": "tree"
+      },
+      "tags": [
+        "decorative",
+        "professional",
+        "achievement"
+      ],
+      "category": "professional",
+      "complexity": "intermediate",
+      "print_time": "3 hours 20 minutes",
+      "post_processing": "Sanding, clear coat finish",
+      "notes": "Physical display for Google Prompt Engineering and Coursera AI Healthcare certifications. Designed with professional aesthetics for video call backgrounds.",
+      "learnings": "PETG provides better clarity for display items. Post-processing time important for professional appearance.",
+      "applications": "Professional branding, achievement visualization, continuous learning motivation"
+    },
+    {
+      "slug": "basketball-team-trophy",
+      "title": "She Got Buckets Team Award",
+      "images": [
+        {
+          "webp": "/images/prints/full-size/IMG_5745.webp",
+          "jpeg": "/images/prints/full-size/IMG_5745.jpg",
+          "thumbnail": "/images/prints/thumbnails/IMG_5745.webp",
+          "thumbnailJpeg": "/images/prints/thumbnails/IMG_5745.jpg",
+          "placeholder": "/images/prints/thumbnails/IMG_5745-blur.jpg",
+          "alt": "She Got Buckets Team Award - PLA 3D print showing Custom team recognition award for women's basketba..."
+        },
+        {
+          "webp": "/images/prints/full-size/IMG_5747.webp",
+          "jpeg": "/images/prints/full-size/IMG_5747.jpg",
+          "thumbnail": "/images/prints/thumbnails/IMG_5747.webp",
+          "thumbnailJpeg": "/images/prints/thumbnails/IMG_5747.jpg",
+          "placeholder": "/images/prints/thumbnails/IMG_5747-blur.jpg",
+          "alt": "She Got Buckets Team Award - PLA 3D print showing Custom team recognition award for women's basketba..."
+        }
+      ],
+      "material": "PLA",
+      "settings": {
+        "nozzle": "0.4mm",
+        "layer_height": "0.15mm",
+        "infill": "25%",
+        "walls": "4",
+        "supports": "tree"
+      },
+      "tags": [
+        "decorative",
+        "community",
+        "sports",
+        "award"
+      ],
+      "category": "community",
+      "complexity": "advanced",
+      "print_time": "6 hours 10 minutes",
+      "post_processing": "Sanding, gold spray paint, engraving",
+      "notes": "Custom team recognition award for women's basketball league fundraising achievement. Incorporated team logo and individual accomplishments.",
+      "learnings": "Multi-part assembly requires precise tolerance planning. Paint adhesion on PLA needs proper surface prep.",
+      "applications": "Community engagement, leadership recognition, custom award design"
+    },
+    {
+      "slug": "modular-tool-organizer",
+      "title": "Modular Workshop Tool Organizer",
+      "images": [
+        {
+          "webp": "/images/prints/full-size/IMG_5663.webp",
+          "jpeg": "/images/prints/full-size/IMG_5663.jpg",
+          "thumbnail": "/images/prints/thumbnails/IMG_5663.webp",
+          "thumbnailJpeg": "/images/prints/thumbnails/IMG_5663.jpg",
+          "placeholder": "/images/prints/thumbnails/IMG_5663-blur.jpg",
+          "alt": "Modular Workshop Tool Organizer - PETG 3D print showing Expandable system for organizing 3D printing tools..."
+        },
+        {
+          "webp": "/images/prints/full-size/IMG_5723.webp",
+          "jpeg": "/images/prints/full-size/IMG_5723.jpg",
+          "thumbnail": "/images/prints/thumbnails/IMG_5723.webp",
+          "thumbnailJpeg": "/images/prints/thumbnails/IMG_5723.jpg",
+          "placeholder": "/images/prints/thumbnails/IMG_5723-blur.jpg",
+          "alt": "Modular Workshop Tool Organizer - PETG 3D print showing Expandable system for organizing 3D printing tools..."
+        },
+        {
+          "webp": "/images/prints/full-size/IMG_5775.webp",
+          "jpeg": "/images/prints/full-size/IMG_5775.jpg",
+          "thumbnail": "/images/prints/thumbnails/IMG_5775.webp",
+          "thumbnailJpeg": "/images/prints/thumbnails/IMG_5775.jpg",
+          "placeholder": "/images/prints/thumbnails/IMG_5775-blur.jpg",
+          "alt": "Modular Workshop Tool Organizer - PETG 3D print showing Expandable system for organizing 3D printing tools..."
+        }
+      ],
+      "material": "PETG",
+      "settings": {
+        "nozzle": "0.4mm",
+        "layer_height": "0.25mm",
+        "infill": "35%",
+        "walls": "4",
+        "supports": "none"
+      },
+      "tags": [
+        "functional",
+        "modular",
+        "workshop",
+        "organization"
+      ],
+      "category": "workshop",
+      "complexity": "intermediate",
+      "print_time": "4 hours 45 minutes",
+      "post_processing": "Light deburring",
+      "notes": "Expandable system for organizing 3D printing tools and maintenance equipment. Interlocking design allows custom configurations.",
+      "learnings": "PETG durability excellent for frequently handled items. Modular design thinking valuable for scalable solutions.",
+      "applications": "Workshop organization, modular system design, iterative improvement process"
+    }
+  ],
+  "materials": {
+    "PLA": {
+      "description": "Biodegradable, easy to print, good for prototypes and decorative items",
+      "pros": [
+        "Easy to print",
+        "Low warping",
+        "Good detail"
+      ],
+      "cons": [
+        "Lower heat resistance",
+        "Brittle over time"
+      ],
+      "applications": [
+        "Prototypes",
+        "Decorative items",
+        "Learning projects"
+      ]
+    },
+    "PETG": {
+      "description": "Chemical resistant, strong, clear options available",
+      "pros": [
+        "Chemical resistant",
+        "Strong",
+        "Clear finish possible",
+        "Food safe"
+      ],
+      "cons": [
+        "Requires higher temps",
+        "More stringing"
+      ],
+      "applications": [
+        "Functional parts",
+        "Medical prototypes",
+        "Durable items"
+      ]
+    }
+  },
+  "complexity_levels": {
+    "beginner": "Simple geometry, minimal supports, forgiving tolerances",
+    "intermediate": "Some overhangs, multi-part assembly, tolerance requirements",
+    "advanced": "Complex geometry, critical tolerances, post-processing required"
+  },
+  "learning_journey": {
+    "started": "2024-06",
+    "printer": "Prusa MK4",
+    "total_prints": "45+",
+    "current_focus": "Medical device prototyping and functional engineering parts",
+    "next_goals": [
+      "Multi-material printing",
+      "Flexible filaments",
+      "Metal-filled composites"
+    ]
+  },
+  "image_optimization": {
+    "formats": [
+      "WebP (primary)",
+      "JPEG (fallback)"
+    ],
+    "dimensions": {
+      "full_size": "1200x900px (4:3 aspect ratio)",
+      "thumbnail": "400x300px (gallery grid)",
+      "placeholder": "40x30px (blur placeholder)"
+    },
+    "quality": {
+      "webp": "85% (optimized for technical detail visibility)",
+      "jpeg": "90% (high quality fallback)"
+    },
+    "total_images": 14,
+    "conversion_date": "2025-09-05T16:17:12.111Z",
+    "source_format": "HEIC (iPhone/iOS camera)",
+    "optimization_benefits": [
+      "Web-optimized formats for fast loading",
+      "Responsive images for all device sizes",
+      "Blur placeholders for smooth loading experience",
+      "Dual format support for browser compatibility"
+    ]
+  }
+}

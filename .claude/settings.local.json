@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm install)",
+      "Bash(npm run build:*)",
+      "Bash(npx next:*)",
+      "Bash(for img in tonometer-hero)",
+      "Bash(do cp \"public/images/hero/$img.webp\" \"public/images/hero/$img@2x.webp\")",
+      "Bash(done)",
+      "Bash(for img in tonometer-showcase healthcare-pipeline retinal-classification she-got-buckets)",
+      "Bash(do cp \"public/images/projects/$img.webp\" \"public/images/projects/$img@2x.webp\")",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(curl:*)",
+      "WebFetch(domain:ulf.online)",
+      "Bash(npm audit:*)",
+      "Bash(npm run type-check:*)",
+      "Bash(npm run lint)",
+      "Bash(npx tsc:*)",
+      "WebFetch(domain:www.qzq.at)",
+      "Bash(lsof:*)",
+      "Bash(pkill:*)",
+      "WebSearch",
+      "WebFetch(domain:lucide.dev)",
+      "WebFetch(domain:www.linkedin.com)",
+      "Bash(git rm:*)",
+      "Bash(git add:*)",
+      "Bash(git filter-branch:*)",
+      "Read(//Users/zlin/Desktop/working_folder/**)",
+      "Bash(git init:*)",
+      "Bash(git branch:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
